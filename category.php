@@ -23,7 +23,7 @@ $sidebar_cat_result = $conn->query($sidebar_cat_sql);
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-black dark:bg-black dark:text-white">
-    <div class="max-w-7xl mx-auto mt-10 flex flex-col md:flex-row gap-8 px-4">
+    <div class="max-w-4xl mx-auto mt-10 flex flex-col md:flex-row gap-8 px-2 sm:px-4 md:px-8">
         <main class="flex-1 bg-white text-black dark:bg-black dark:text-white rounded-xl shadow-lg p-8">
             <a href="index.php" class="inline-block mb-4 hover:underline">&larr; Back to Home</a>
             <h1 class="text-2xl font-bold text-center mb-8"><?php echo $category ? htmlspecialchars($category['name']) : 'Category Not Found'; ?></h1>
